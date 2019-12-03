@@ -7,58 +7,58 @@
 <html>
 	<head>
 		<title>Strata by HTML5 UP</title>
-		<pre><code>
-	public static void main(String args[]) throws FileNotFoundException{
-	File file = new File(args[0]);
-	Scanner scan = new Scanner(file);
-	ArrayList<airplane> controlTower = new ArrayList<airplane>();
-	String line = "";
-	
-	String flightNum, comingFrom, goingTo, time;
-	
-	int day, hour, min, passengerCount;
-	while (scan.hasNext()){
-	line = scan.nextLine();
-	String[] input = line.split(" ");
-	flightNum = input[0];
-	comingFrom = input[1];
-	goingTo = input[2];
-	time = input[3];
-	
-	String[] timeSplit = time.split(":");
-	day = 1;//will have to keep track of this outside of the while and increase with each flight
-	hour = Integer.parseInt(timeSplit[0]);
-	min = Integer.parseInt(timeSplit[1]);
-	
-	passengerCount = Integer.parseInt(input[4]);
-	controlTower.add(new airplane(flightNum, comingFrom, goingTo, day, hour, min, passengerCount));
-	}
-		
-	
-		</code></pre>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
-
+		
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/myPics/Me.JPG" alt="" /></a>
-					<h1><strong>I am Braxton</strong>, made a super simple<br />
+		<header id="header">
+			<div class="inner">
+				<a href="#" class="image avatar"><img src="images/myPics/Me.JPG" alt="" /></a>
+				<h1><strong>I am Braxton</strong>, made a super simple<br />
 					responsive site<br />
 					crafted with help by <a href="http://html5up.net">HTML5 UP</a>.</h1>
 				</div>
 			</header>
-
-		<!-- Main -->
+			
+			<!-- Main -->
 			<div id="main">
-
+				
 				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
+				<section id="one">
+					<header class="major">
+						<pre><code>
+					public static void main(String args[]) throws FileNotFoundException{
+					File file = new File(args[0]);
+					Scanner scan = new Scanner(file);
+					ArrayList<airplane> controlTower = new ArrayList<airplane>();
+					String line = "";
+					
+					String flightNum, comingFrom, goingTo, time;
+					
+					int day, hour, min, passengerCount;
+					while (scan.hasNext()){
+					line = scan.nextLine();
+					String[] input = line.split(" ");
+					flightNum = input[0];
+					comingFrom = input[1];
+					goingTo = input[2];
+					time = input[3];
+					
+					String[] timeSplit = time.split(":");
+					day = 1;//will have to keep track of this outside of the while and increase with each flight
+					hour = Integer.parseInt(timeSplit[0]);
+					min = Integer.parseInt(timeSplit[1]);
+					
+					passengerCount = Integer.parseInt(input[4]);
+					controlTower.add(new airplane(flightNum, comingFrom, goingTo, day, hour, min, passengerCount));
+					}
+						
+					
+						</code></pre>
+						<h2>Ipsum lorem dolor aliquam ante commodo<br />
 							magna sed accumsan arcu neque.</h2>
 						</header>
 						
